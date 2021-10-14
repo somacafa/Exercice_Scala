@@ -64,7 +64,7 @@ object projet_scala extends App{
     exit()
   }
 
-  /* Récupération de la longueur et largeur de la grille (le code ne traite que des grilles de taille 9x9 maximum) */
+  /* Récupération de la longueur et largeur de la grille */
   var x_grille = Tab(0).split(" ")(0).toInt
   var y_grille = Tab(0).split(" ")(1).toInt
 
@@ -123,7 +123,7 @@ object projet_scala extends App{
         case _ =>
       }
     }
-    /* Renvoi la réponse finale du programme avec positionnement et orientation finale de la tondeuse traitée*/
+    /* Renvoi la réponse finale du programme avec positionnement et orientation finale de la tondeuse traitée */
     println("Tondeuse " + (i+1) + " : " + Tondeuse.x_ + " " + Tondeuse.y_ + " " + Tondeuse.ori_ + "\n")
   }
 }
